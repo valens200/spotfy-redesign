@@ -20,11 +20,11 @@ function Join() {
         <Navbar />
 
     <div className='text-white h-[90vh]'>
-      <div className='translate-y-[40vh] flex justify-between w-[70%] mx-auto'> 
+      <div className='md:translate-y-[40vh] translate-y-[20vh] flex  md:flex-row flex-col justify-between w-[90%] md:w-[70%] mx-auto'> 
       <div className='text-[4rem]'>
            <h1 className='font-bold'>Join the <span className='text-red-500'>Fun</span></h1>
         </div>
-        <div className='bg-black  rounded px-2 py-4 h-[70vh] w-[54%] -translate-y-[20vh]'>
+        <div className='bg-black  rounded px-2 py-4 h-[50vh] md:h-[70vh] w-[100%] md:w-[54%] md:-translate-y-[20vh]'>
             <form action="classsName w-[90%] mx-auto h-[100%] p-[20px]">
                 {inputs.map((input, index) => (
                     <div className='bg-[black] mt-[6%] mx-auto h-[8vh]  rounded w-[80%]'>
@@ -42,7 +42,7 @@ function Join() {
         </div>
       </div>
     </div>
-   <div className='mt-20'>
+   <div className='mt-20 md:block hidden'>
    <Footer />
    </div>
     </div>

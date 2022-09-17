@@ -15,9 +15,9 @@ function Discover() {
       <div>
         <div className='w-[76%] mx-auto'>
         <h1 className='text-[1.7rem] text-white my-10'>Discover new music</h1>
-          <div className='flex md:flex-row flex-col md:space-y-0 space-y-20  w-[60%] justify-between'>
+          <div className='flex md:flex-row  flex-col md:space-y-0 space-y-20  md:w-[60%] w-[100%] justify-between'>
             {texts.map((text, index) => (
-              <div  className='bg-[black] p-2 text-white w-[30%] h-[10vh]'>
+              <div  className='bg-[black] p-2 text-white md:w-[30%] w-[100%] h-[10vh]'>
                 <p className='my-3'>img</p>
                 <p className='text-center'>{text}</p>
               </div>
@@ -39,7 +39,10 @@ function Discover() {
       </div>
 
     </div>
+    <div className='md:block hidden'>
+
     <Footer />
+    </div>
     </div>
     </Slide>
   )

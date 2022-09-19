@@ -1,21 +1,22 @@
 body {
-  background-color: rgba(0, 0, 0, 0.769);
+  /* background-color: rgba(0, 0, 0, 0.701);
+   */
   background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.772);
 }
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 .main{
   background-image: url('./assets/images/image.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:contain;
+  background-origin: padding-box;
+  background-clip:padding-box;
+  background-attachment: fixed;
+  background-blend-mode: black;
 }
 
 @tailwind base;
